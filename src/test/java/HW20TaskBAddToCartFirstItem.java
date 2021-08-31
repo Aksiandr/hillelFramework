@@ -5,12 +5,10 @@ import page.ShopDemoQaHeaderPageFactory;
 import page.ShopDemoQaMainPageFactory;
 import page.ShopDemoQaProductOrderFormPageFactory;
 
-import java.util.concurrent.TimeUnit;
-
 public class HW20TaskBAddToCartFirstItem extends BaseTest {
 
     @Test
-    public void testB() throws InterruptedException {
+    public void testB() {
 
         getWebDriver().get("https://shop.demoqa.com/");
         ShopDemoQaMainPageFactory main = new ShopDemoQaMainPageFactory(getWebDriver());
