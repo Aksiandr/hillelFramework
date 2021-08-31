@@ -1,9 +1,8 @@
 import Base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.ShopDemoQaErrorPageFactory;
-import page.ShopDemoQaIsharmPageFactory;
-import page.ShopDemoQaReadMorePageFactory;
+import page.*;
+
 
 public class HW20TaskAAddComment extends BaseTest {
 
