@@ -8,7 +8,7 @@ import page.ShopDemoQaWishList;
 
 public class TaskBAddToWishListHW19 extends BaseTest {
 
-    @Test
+    @Test(groups = {"Regression"})
     public void addProductToWishList() {
 
         getWebDriver().get("https://shop.demoqa.com/");

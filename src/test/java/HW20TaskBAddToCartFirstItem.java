@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class HW20TaskBAddToCartFirstItem extends BaseTest {
 
-    @Test
+    @Test(groups = "Regression")
     public void testB() throws InterruptedException {
 
         getWebDriver().get("https://shop.demoqa.com/");

@@ -1,5 +1,4 @@
 import Base.BaseTest;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import page.ShopDemoQaCart;
@@ -9,7 +8,7 @@ import page.ShopDemoQaProductOrderForm;
 
 public class TaskCAddToCartHW19 extends BaseTest {
 
-    @Test
+    @Test(groups = "Regression")
     public void addProductToCart() {
 
         getWebDriver().get("https://shop.demoqa.com/");
