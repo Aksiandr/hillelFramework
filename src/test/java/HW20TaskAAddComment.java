@@ -3,11 +3,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import page.*;
 
-
 public class HW20TaskAAddComment extends BaseTest {
 
-    @Test(groups = "Regression")
-    public void testA() throws InterruptedException {
+    @Test
+    public void testA() {
 
         getWebDriver().get("http://shop.demoqa.com/author/lsharm/");
         ShopDemoQaIsharmPageFactory iSharm = new ShopDemoQaIsharmPageFactory(getWebDriver());
