@@ -68,13 +68,15 @@ public abstract class BasePage {
         return findWebElement(locator).getText().equals(text);
     }
 
-//    public void actionClick(By locator) {
-////        Actions actionProvider = new Actions(webDriver);
-////        actionProvider.doubleClick(findWebElement(locator)).build().perform();
-//        JavascriptExecutor executor = (JavascriptExecutor) webDriver;
-//        executor.executeScript("arguments[0].scrollIntoView(true);", findWebElement(locator));
-//        findWebElement(locator).click();
-//    }
+
+
+    public void actionClick(By locator) {
+//        Actions actionProvider = new Actions(webDriver);
+//        actionProvider.doubleClick(findWebElement(locator)).build().perform();
+        WebElement element = webDriver.findElement(locator);
+        JavascriptExecutor executor = (JavascriptExecutor)webDriver;
+        executor.executeScript("arguments[0].click();", element);
+    }
 
 }
 
